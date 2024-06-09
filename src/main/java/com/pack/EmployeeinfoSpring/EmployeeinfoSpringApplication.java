@@ -1,13 +1,13 @@
-package com.pack.Employeeinfosb;
+package com.pack.EmployeeinfoSpring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class EmployeeinfosbApplication {
+public class EmployeeinfoSpringApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(EmployeeinfosbApplication.class, args);
+		SpringApplication.run(EmployeeinfoSpringApplication.class, args);
 	}
 
 }

@@ -1,4 +1,4 @@
-package com.pack.Employeeinfosb.service;
+package com.pack.EmployeeinfoSpring.service;
 
 //No annotations required here @Entity can be used if we are using JPA
 public class EmployeeInfo {

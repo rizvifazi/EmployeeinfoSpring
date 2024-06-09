@@ -1,4 +1,4 @@
-package com.pack.Employeeinfosb.controller;
+package com.pack.EmployeeinfoSpring.controller;
 
 import java.util.List;
 
@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.pack.Employeeinfosb.service.EmployeeDaoService;
-import com.pack.Employeeinfosb.service.EmployeeInfo;
+import com.pack.EmployeeinfoSpring.service.EmployeeDaoService;
+import com.pack.EmployeeinfoSpring.service.EmployeeInfo;
 
 @RestController
 public class EmployeeController implements ErrorController {
@@ -17,6 +17,8 @@ public class EmployeeController implements ErrorController {
 	// Defining for Error page
 	protected static final String PATH = "/error";
 
+	// Return a HTML based string to print useful information if entered a incorrect
+	// URL
 	@GetMapping(value = PATH)
 	public String getErrorMessage() {
 		return """
@@ -30,16 +32,16 @@ public class EmployeeController implements ErrorController {
 				""";
 	}
 
+	// This needs to be implemented for ErrorController functional interface
 	public String getErrorPath() {
 		return PATH;
 	}
 
-	// Referring another component here
+	// Referring another (DAO) component here
 	@Autowired
 	private EmployeeDaoService service;
 
 	// Get Request Mapping to list all employees
-
 	@GetMapping(value = "/employees")
 	public List<EmployeeInfo> getAllEmployees() {
 		return service.findAll();

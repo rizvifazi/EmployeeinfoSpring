@@ -1,4 +1,4 @@
-package com.pack.Employeeinfosb.service;
+package com.pack.EmployeeinfoSpring.service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,11 +11,11 @@ public class EmployeeDaoService {
 
 	// Static block to pre-load dummy employees
 	static {
-		employees.add(new EmployeeInfo(1, "Praveen Kumar", 34000.00, "Trichi, Chennai"));
-		employees.add(new EmployeeInfo(2, "Sanjeev Singh", 24000.00, "Bangalore, Hydrabad"));
-		employees.add(new EmployeeInfo(3, "Kumar Panvar", 45000.00, "Some City, Kolkatta"));
-		employees.add(new EmployeeInfo(4, "Dilip Kher", 11000.00, "Aluva, Cochi"));
-		employees.add(new EmployeeInfo(5, "Anita Desai", 27000.00, "Logi, Panjab"));
+		employees.add(new EmployeeInfo(1, "Alice Johnson", 52000.00, "San Francisco, CA"));
+		employees.add(new EmployeeInfo(2, "Bob Williams", 48000.00, "Seattle, WA"));
+		employees.add(new EmployeeInfo(3, "Charlie Miller", 61000.00, "New York, NY"));
+		employees.add(new EmployeeInfo(4, "Diana Garcia", 39000.00, "Austin, TX"));
+		employees.add(new EmployeeInfo(5, "Ethan Lee", 45000.00, "Chicago, IL"));
 	}
 
 	// returns list of employees
