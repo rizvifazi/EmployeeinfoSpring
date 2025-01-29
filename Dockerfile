@@ -1,3 +1,7 @@
+FROM eclipse-temurin:17-jdk-jammy AS builder
+WORKDIR /app
+COPY pom.xml .
+COPY src ./src
 COPY mvnw .
 COPY .mvn ./.mvn
 # Fix permissions for mvnw
