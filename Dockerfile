@@ -1,6 +1,7 @@
-FROM eclipse-temurin:17-jdk-jammy as builder
-WORKDIR /app
-COPY . .
+COPY mvnw .
+COPY .mvn ./.mvn
+# Fix permissions for mvnw
+RUN chmod +x mvnw
 RUN ./mvnw clean package -DskipTests
 
 FROM eclipse-temurin:17-jre-jammy
