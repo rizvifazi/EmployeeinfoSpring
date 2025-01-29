@@ -41,6 +41,12 @@ public class EmployeeController implements ErrorController {
 	@Autowired
 	private EmployeeDaoService service;
 
+	// Hello World!
+	@GetMapping(value = "/")
+	public String sayHello() {
+		return "Welcome to the Employee Info App!!";
+	}
+
 	// Get Request Mapping to list all employees
 	@GetMapping(value = "/employees")
 	public List<EmployeeInfo> getAllEmployees() {
