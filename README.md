@@ -85,7 +85,7 @@ Spring based REST API application to manage Employee details.
 ```properties
 spring.application.name=EmployeeinfoSpring
 logging.level.web=DEBUG
-server.port=2020
+server.port=8080
 server.servlet.context-path=/app
 ```
 
@@ -297,7 +297,7 @@ public class EmployeeinfoSpringApplication {
 2024-06-09T23:24:58.504+05:30  INFO 6228 --- [EmployeeinfoSpring] [  restartedMain] c.p.E.EmployeeinfoSpringApplication      : Starting EmployeeinfoSpringApplication using Java 17.0.7 with PID 6228 (C:\Users\acer\eclipse-workspace\EmployeeinfoSpring\target\classes started by acer in C:\Users\acer\eclipse-workspace\EmployeeinfoSpring)
 2024-06-09T23:24:58.506+05:30  INFO 6228 --- [EmployeeinfoSpring] [  restartedMain] c.p.E.EmployeeinfoSpringApplication      : No active profile set, falling back to 1 default profile: "default"
 2024-06-09T23:24:58.550+05:30  INFO 6228 --- [EmployeeinfoSpring] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-06-09T23:24:59.376+05:30  INFO 6228 --- [EmployeeinfoSpring] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 2020 (http)
+2024-06-09T23:24:59.376+05:30  INFO 6228 --- [EmployeeinfoSpring] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
 2024-06-09T23:24:59.389+05:30  INFO 6228 --- [EmployeeinfoSpring] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
 2024-06-09T23:24:59.390+05:30  INFO 6228 --- [EmployeeinfoSpring] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
 2024-06-09T23:24:59.434+05:30  INFO 6228 --- [EmployeeinfoSpring] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/app]    : Initializing Spring embedded WebApplicationContext
@@ -309,15 +309,15 @@ public class EmployeeinfoSpringApplication {
 2024-06-09T23:24:59.658+05:30 DEBUG 6228 --- [EmployeeinfoSpring] [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
 2024-06-09T23:24:59.685+05:30 DEBUG 6228 --- [EmployeeinfoSpring] [  restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
 2024-06-09T23:24:59.730+05:30  INFO 6228 --- [EmployeeinfoSpring] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-06-09T23:24:59.763+05:30  INFO 6228 --- [EmployeeinfoSpring] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 2020 (http) with context path '/app'
+2024-06-09T23:24:59.763+05:30  INFO 6228 --- [EmployeeinfoSpring] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/app'
 2024-06-09T23:24:59.772+05:30  INFO 6228 --- [EmployeeinfoSpring] [  restartedMain] c.p.E.EmployeeinfoSpringApplication      : Started EmployeeinfoSpringApplication in 1.558 seconds (process running for 1.848)
 ```
 
-Navigate to http://localhost:2020/app/employees through a browser to See the browser output in JSON format.
+Navigate to http://localhost:8080/app/employees through a browser to See the browser output in JSON format.
 
 ##### 10. Browser Outputs
 
-###### http://localhost:2020/app/employees 
+###### http://localhost:8080/app/employees 
 
 ```JSON
 [
@@ -355,7 +355,7 @@ Navigate to http://localhost:2020/app/employees through a browser to See the bro
 ```
 
 
-###### http://localhost:2020/app/employee/3
+###### http://localhost:8080/app/employee/3
 ```JSON
 {
   "id": 3,
